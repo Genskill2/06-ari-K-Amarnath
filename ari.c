@@ -4,12 +4,12 @@
 #include <ctype.h>
 #include <math.h>
 
-int ltr(string s)
+float ltr(string s)
 {
     int k = 0;
     for (int i = 0; i < strlen(s); i++)
     {
-        if(isalpha(s[i]))
+        if(isalnum(s[i]))
         {
             k++;
         }
@@ -17,7 +17,7 @@ int ltr(string s)
     return k;    
 }
 
-int wrd(string s)
+float wrd(string s)
 {
     int k = 0;
     for (int i = 0; i < strlen(s); i++)
@@ -27,10 +27,10 @@ int wrd(string s)
             k++;
         }
     }
-    return k+1;
+    return k;
 }
 
-int snt(string s)
+float snt(string s)
 {
     int k = 0;
     for (int i = 0; i < strlen(s); i++)
@@ -45,15 +45,56 @@ int snt(string s)
 
 int rb_index(string s)
 {
-    float L = (ltr(s)/wrd(s)) * 100;
-    float S = (snt(s)/wrd(s)) * 100;
-    int Grade = round(.0588*L - 14.28*S - 15.8);
+    int Grade = ceil(4.71 * (ltr(s)/wrd(s)) + 0.5 * (wrd(s)/snt(s)) - 21.43);
     return Grade;
 }
 
 int main(void)
 {
     string s = get_string("Sentence: ");
-    printf("The given string has %i letter(s) %i word(s) %i sentence(s)\n", ltr(s), wrd(s), snt(s));
-    printf("Grade: %i\n", rb_index(s));
+    switch(rb_index(s)
+    {
+        case 1:
+            printf("Kindergarden\n");
+            break;
+        case 2:
+            printf("First/Second Grade\n");
+            break;
+        case 3:
+            printf("Third Grade\n");
+            break;
+        case 4:
+            printf("Fourth Grade\n");
+            break;
+        case 5:
+            printf("Fifth Grade\n");
+            break;
+        case 6:
+            printf("Sixth Grade\n");
+            break;
+        case 7:
+            printf("Seventh Grade\n");
+            break;
+        case 8:
+            printf("Eighth Grade\n");
+            break;
+        case 9:
+            printf("Ninth Grade\n");
+            break;
+        case 10:
+            printf("Tenth Grade\n");
+            break;
+        case 11:
+            printf("Eleventh\n");
+            break;
+        case 12:
+            printf("Twelfth Grade\n");
+            break;
+        case 13:
+            printf("College Student\n");
+            break;
+        case 14:
+            printf("Professor\n");
+            break;
+    }
 }
