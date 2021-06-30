@@ -31,7 +31,7 @@ string ari(string s)
     {
         if (i == rb_index)
         {
-            Grade = srt_ret[i];
+            Grade = str_ret[i];
         }
     }
     return Grade;
