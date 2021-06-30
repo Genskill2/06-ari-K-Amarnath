@@ -56,8 +56,6 @@ string ari(string s)
     for (int i = 0; i < 14; i++)
     {
         if (i == rb_index(s))
-        {
             return srt_ret[i - 1];
-        }
     }
 }
