@@ -51,7 +51,6 @@ int rb_index(string s)
 
 string ari(string s)
 {
-    string s = get_string("Sentence: ");
     switch(rb_index(s))
     {
         case 1:
