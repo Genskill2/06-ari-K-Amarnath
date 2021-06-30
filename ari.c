@@ -51,7 +51,7 @@ int rb_index(string s)
 
 string ari(string s)
 {
-    srt_ret[] = {"Kindergarden", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade", "Eighth Grade", "Ninth Grade", "Tenth Grade", "Eleventh Grade", "Twelfth Grade", "College Student", "Professor"};
+    string srt_ret[] = {"Kindergarden", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade", "Eighth Grade", "Ninth Grade", "Tenth Grade", "Eleventh Grade", "Twelfth Grade", "College Student", "Professor"};
     
     for (int i = 0; i < 14; i++)
     {
