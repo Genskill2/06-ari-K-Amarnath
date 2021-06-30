@@ -52,7 +52,7 @@ int rb_index(string s)
 int main(void)
 {
     string s = get_string("Sentence: ");
-    switch(rb_index(s)
+    switch(rb_index(s))
     {
         case 1:
             printf("Kindergarden\n");
