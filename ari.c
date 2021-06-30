@@ -4,53 +4,26 @@
 #include <ctype.h>
 #include <math.h>
 
-float ltr(string s)
+string ari(string s)
 {
-    int k = 0;
+    float ltr = 0, wrd = 0, snt = 0;
     for (int i = 0; i < strlen(s); i++)
     {
         if(isalnum(s[i]))
         {
-            k++;
+            ltr++;
         }
-    }
-    return k;    
-}
-
-float wrd(string s)
-{
-    int k = 0;
-    for (int i = 0; i < strlen(s); i++)
-    {
-        if (s[i] == ' ')
+        else if (s[i] == ' ')
         {
-            k++;
+            wrd++;
         }
-    }
-    return k;
-}
-
-float snt(string s)
-{
-    int k = 0;
-    for (int i = 0; i < strlen(s); i++)
-    {
-        if (s[i] == '.' || s[i] == '?' || s[i] == '!')
+        else if (s[i] == '.' || s[i] == '?' || s[i] == '!')
         {
-            k++;
+            snt++;
         }
     }
-    return k;    
-}
+    int rb_index(s) = ceil(4.71 * (ltr(s)/wrd(s)) + 0.5 * (wrd(s)/snt(s)) - 21.43);
 
-int rb_index(string s)
-{
-    int Grade = ceil(4.71 * (ltr(s)/wrd(s)) + 0.5 * (wrd(s)/snt(s)) - 21.43);
-    return Grade;
-}
-
-string ari(string s)
-{
     string srt_ret[] = {"Kindergarden", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade", "Eighth Grade", "Ninth Grade", "Tenth Grade", "Eleventh Grade", "Twelfth Grade", "College Student", "Professor"};
     
     for (int i = 0; i < 14; i++)
