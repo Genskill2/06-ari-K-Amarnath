@@ -33,6 +33,6 @@ string ari(string s)
 	    {
 	        Grade = str_ret[i-1];
 	    }
-    }
-	return grade;
+	}
+	return Grade;
 }
