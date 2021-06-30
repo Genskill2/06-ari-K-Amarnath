@@ -6,8 +6,8 @@
 
 string ari(string s)
 {
+	string Grade;
 	int ltr = 0, wrd = 0, snt=0;
-	string grade;
 
 	for(int i = 0; i < strlen(s); i++)
 	{
@@ -25,13 +25,13 @@ string ari(string s)
 
 	int rb_index = ceil(var);
 	
-	string str_ret[] = {"KinderKindergarten","First/Second Grade","Third Grade","Fourth Grade","Fifth Grade","Sixth Grade","Seventh Grade","Eighth Grade","Ninth Grade","Tenth Grade","Eleventh Grade","Twelfth grade","College student","Professor"} ;
+	string str_ret[] = {"KinderKindergarten","First/Second Grade","Third Grade","Fourth Grade","Fifth Grade","Sixth Grade","Seventh Grade","Eighth Grade","Ninth Grade","Tenth Grade","Eleventh Grade","Twelfth grade","College Student","Professor"} ;
 	
 	for(int i = 1; i <= 14; i++)
 	{
 	    if(rb_index == i)
 	    {
-	        Grade = srt_ret[i-1];
+	        Grade = str_ret[i-1];
 	    }
     }
 	return grade;
