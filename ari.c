@@ -27,11 +27,11 @@ string ari(string s)
 
     string srt_ret[] = {"Kindergarden", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade", "Eighth Grade", "Ninth Grade", "Tenth Grade", "Eleventh Grade", "Twelfth Grade", "College Student", "Professor"};
     
-    for (int i = 0; i < 14; i++)
+    for (int i = 1; i <= 14; i++)
     {
         if (i == rb_index)
         {
-            Grade = srt_ret[i - 1];
+            Grade = srt_ret[i];
         }
     }
     return Grade;
