@@ -25,8 +25,8 @@ string ari(string s)
     }
     int rb_index = ceil(4.71 * (ltr/wrd) + 0.5 * (wrd/snt) - 21.43);
 
-    string srt_ret[] = {"Kindergarden", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade", "Eighth Grade", "Ninth Grade", "Tenth Grade", "Eleventh Grade", "Twelfth Grade", "College Student", "Professor"};
-    
+    string str_ret[] = {"KinderKindergarten","First/Second Grade","Third Grade","Fourth Grade","Fifth Grade","Sixth Grade","Seventh Grade","Eighth Grade","Ninth Grade","Tenth Grade","Eleventh Grade","Twelfth grade","College student","Professor"} ;
+	
     for (int i = 1; i <= 14; i++)
     {
         if (i == rb_index)
