@@ -49,7 +49,7 @@ int rb_index(string s)
     return Grade;
 }
 
-int main(void)
+string ari(string s)
 {
     string s = get_string("Sentence: ");
     switch(rb_index(s))
