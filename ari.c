@@ -25,7 +25,7 @@ string ari(string s)
 
 	int rb_index = ceil(var);
 	
-	string str_ret[] = {"KinderKindergarten","First/Second Grade","Third Grade","Fourth Grade","Fifth Grade","Sixth Grade","Seventh Grade","Eighth Grade","Ninth Grade","Tenth Grade","Eleventh Grade","Twelfth grade","College Student","Professor"} ;
+	string str_ret[] = {"KinderKindergarten", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade", "Eighth Grade", "Ninth Grade", "Tenth Grade", "Eleventh Grade", "Twelfth grade", "College Student", "Professor"} ;
 	
 	for(int i = 1; i <= 14; i++)
 	{
