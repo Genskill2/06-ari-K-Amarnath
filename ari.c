@@ -6,6 +6,7 @@
 
 string ari(string s)
 {
+    string Grade;
     float ltr = 0, wrd = 0, snt = 0;
     for (int i = 0; i < strlen(s); i++)
     {
@@ -29,6 +30,9 @@ string ari(string s)
     for (int i = 0; i < 14; i++)
     {
         if (i == rb_index)
-            return srt_ret[i - 1];
+        {
+            Grade = srt_ret[i - 1];
+        }
     }
-    }
+    return Grade;
+}
