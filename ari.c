@@ -51,49 +51,13 @@ int rb_index(string s)
 
 string ari(string s)
 {
-    switch(rb_index(s))
+    srt_ret[] = {"Kindergarden", "First/Second Grade", "Third Grade", "Fourth Grade", "Fifth Grade", "Sixth Grade", "Seventh Grade", "Eighth Grade", "Ninth Grade", "Tenth Grade", "Eleventh Grade", "Twelfth Grade", "College Student", "Professor"};
+    
+    for (int i = 0; i < 14; i++)
     {
-        case 1:
-            printf("Kindergarden\n");
-            break;
-        case 2:
-            printf("First/Second Grade\n");
-            break;
-        case 3:
-            printf("Third Grade\n");
-            break;
-        case 4:
-            printf("Fourth Grade\n");
-            break;
-        case 5:
-            printf("Fifth Grade\n");
-            break;
-        case 6:
-            printf("Sixth Grade\n");
-            break;
-        case 7:
-            printf("Seventh Grade\n");
-            break;
-        case 8:
-            printf("Eighth Grade\n");
-            break;
-        case 9:
-            printf("Ninth Grade\n");
-            break;
-        case 10:
-            printf("Tenth Grade\n");
-            break;
-        case 11:
-            printf("Eleventh\n");
-            break;
-        case 12:
-            printf("Twelfth Grade\n");
-            break;
-        case 13:
-            printf("College Student\n");
-            break;
-        case 14:
-            printf("Professor\n");
-            break;
+        if (i == rb_index(s))
+        {
+            return srt_ret[i - 1];
+        }
     }
 }
