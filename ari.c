@@ -31,4 +31,4 @@ string ari(string s)
         if (i == rb_index)
             return srt_ret[i - 1];
     }
-}
+    }
