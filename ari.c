@@ -9,7 +9,7 @@ string ari(string s)
 	int len, num_word=0, num_char=0, num_sent=0;
 	string grade;
 	len = strlen(s);
-	(int i = 0; i < len; i++) 
+	for (int i = 0; i < len; i++) 
 	{
 	  if(isalnum(s[i]))
 	    num_char++;
